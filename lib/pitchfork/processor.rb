@@ -30,12 +30,10 @@ class Pitchfork::Processor
 
     log_info { 'Starting repos processing in threads...' }
     repos.each do |repo|
-      pool.post { process_repo(repo) }
+      process_repo(repo)
     end
 
-    log_info { 'Waiting all repo processing threads to shutdown...' }
-    pool.shutdown
-    pool.wait_for_termination
+    log_info { 'Done...' }
   end
 
   private
