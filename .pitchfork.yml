@@ -2,16 +2,16 @@
 ## Default (built-in) settings
 ##
 
-hosts:
-  github:
-    name: GitHub
-#    adapter: oktokit
-
-defaults:
-  hosts:
-    auth: ssh
-  repos:
-    host: github
+#hosts:
+#  github:
+#    name: GitHub
+##    adapter: oktokit
+#
+#defaults:
+#  hosts:
+#    auth: ssh
+#  repos:
+#    host: github
 
 ##
 ## System level configuration
